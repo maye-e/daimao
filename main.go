@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
+	"time"
 )
 
 var logger *zap.Logger
@@ -21,6 +22,8 @@ func main() {
 	//fmt.Scan(&cmd)
 	//fmt.Println(cmd)
 	//time.Sleep(1 * time.Second)
+	parse, _ := time.Parse("2006-01-02T15:04:05.000000000Z", "2022-05-27T03:48:42.553548987Z")
+	fmt.Println(parse.Format("2006-01-02 15:04:05"))
 }
 
 func init() {
