@@ -1,0 +1,24 @@
+[log]
+# 日志文件设置
+[log.file]
+# 日志级别，支持 4 个等级：debug, info, warn, error. 不区分大小写，默认级别为 info
+level = "info"
+# 是否记录文件日志
+enable = true
+# 控制台日志设置
+[log.console]
+# 日志级别，同上
+level = "info"
+# 是否打印控制台日志
+enable = true
+
+[pylogon]
+# 导出文件的存储路径
+path = "./out"
+symbols = ["USDT","EUR"]
+# 起始时间(UTC)
+from = 2020-01-02
+# 截止时间(UTC)
+to = 2020-01-02
+# 最大返回数量
+limit = 50000
